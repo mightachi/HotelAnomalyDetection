@@ -50,13 +50,38 @@ htmlcov/
 .env
 .env.local
 
-# Data files (optional - uncomment if you don't want to track data)
-# data/*.csv
-# data/*.json
+# Data files - NEVER track data files
+*.csv
+*.json
+*.xlsx
+*.xls
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.feather
+*.arrow
 
-# Plots/outputs (optional - uncomment if you don't want to track generated files)
-# plots/*
-# !plots/.gitkeep
+# Image files - NEVER track image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+
+# Plots/outputs - NEVER track generated files
+plots/*
+!plots/.gitkeep
+
+# Data directories - exclude all data files
+data/*.csv
+data/*.json
+data/*.xlsx
+data/*.parquet
 
 # Logs
 *.log
