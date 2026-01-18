@@ -89,3 +89,7 @@ data/*.parquet
 # OS
 .DS_Store
 Thumbs.db
+
+# Documentation files - Only track README.md
+*.md
+!README.md
